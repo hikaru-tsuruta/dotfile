@@ -1,0 +1,19 @@
+[user]
+	name = hikaru.shinkai
+	email = shiknai.hikaru@gmail.com 
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/shibuya/.gitignore
+	editor = /usr/local/bin/vim
+[alias]
+	diffc = diff --cached
+	pushf = push --force-with-lease
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = simple
